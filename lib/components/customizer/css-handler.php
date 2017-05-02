@@ -23,7 +23,7 @@ function build_inline_css_from_customizer_settings() {
 	$handle  = defined( 'CHILD_THEME_NAME' ) && CHILD_THEME_NAME ? sanitize_title_with_dashes( CHILD_THEME_NAME ) : 'child-theme';
 
 	$color_link = get_theme_mod( $prefix . '_link_color', get_default_link_color() );
-	$color_accent = get_theme_mod( $prefix . '_accent_color', genesis_sample_customizer_get_default_accent_color() );
+	$color_accent = get_theme_mod( $prefix . '_accent_color', get_default_accent_color() );
 
 	$css = '';
 
